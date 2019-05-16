@@ -6,40 +6,51 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     link(rel="stylesheet", href="../scss/style.scss")
     script(src="../js/main.js")
+    script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js", integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js", integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q", crossorigin="anonymous")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js", integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl", crossorigin="anonymous")
     title GIPHY | Search All the GIFs & Make Your Own Animated GIF
   body
     div.fullContent
-      header
-        img.giphyLogo(src="giphy2.png")
-        div.navItems
-          ul.nav
-            li
-              a(href="#") Reactions
-            li
-              a(href="#") Entertainment
-            li
-              a(href="#") Sports
-            li
-              a(href="#") Stickers
-            li
-              a(href="#") Artists
-        div.pairOfButtons
-          button.buttonBar(type="button") Upload
-          button.buttonBar(type="button") Create
-          button.buttonLogin(type="button") Login
+      nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+        a.navbar-brand(href="#")
+          img(src="giphy2.png", height="30")
+        button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNavAltMarkup", aria-controls="navbarNavAltMarkup", aria-expanded="false", aria-label="Toggle navigation")
+          span.navbar-toggler-icon
+        div.collapse.navbar-collapse#navbarNavAltMarkup
+          div.navbar-nav
+            a.nav-link.nav-item(href="#") Reactions
+            a.nav-link.nav-item(href="#") Entertainment
+            a.nav-link.nav-item(href="#") Sports
+            a.nav-link.nav-item(href="#") Stickers
+            a.nav-link.nav-item(href="#") Artists
+          button(type="button").btn.btn-primary Upload
+          button(type="button").btn.btn-primary Create
+          button(type="button").btn.btn-secondary Log In
       form
         input(type="text")
         button.pinkButton(type="submit")
-        
-
-      //- div.input-group.mb-3
-      //-   input(type="text").form-control(placeholder="placeholder info", aria-label="placeholderinfo", aria-describedby="basic-addon2")
-      //-   div.input-group-append
-      //-     button.btn.btn-outline-secondary(type="image", src="search-icon.svg")
       img.banner(src="banner.gif")
       p TRENDING GIFS
-      //- div.gifRow
-      //-   img.gif(src="gifone.gif")
-      //-   img.gif(src="gif2.gif")
-      //-   img.gif(src="gif3.gif")
-      //-   img.gif(src="gif4.gif")
+      div.gifRow
+        img.gifSmall(src="gifone.gif")
+        img.gifSmall(src="gif2.gif")
+        img.gifSmall(src="gif3.gif")
+        img.gifSmall(src="gif4.gif")
+        img.gifSmall(src="gif5.gif")
+        img.gifSmall(src="gif6.gif")
+      h1 Today May 16
+      p LATEST STORIES
+      div.gifStoryRow 
+        div.bigGifContainer 
+          img.gifLarge(src="gif5.gif")
+          div.bottom-left This is a news article headline about some stuff
+          div.bottom-left-time 2 hrs ago
+        div.bigGifContainer
+          img.gifLarge(src="gif6.gif")
+          div.bottom-left This is a news article headline about some stuff
+          div.bottom-left-time 2 hrs ago
+        div.bigGifContainer
+          img.gifLarge(src="gif7.gif")
+          div.bottom-left This is a news article headline about some stuff
+          div.bottom-left-time 2 hrs ago
