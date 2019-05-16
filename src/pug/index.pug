@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="../scss/style.scss")
+    script(src="../js/main.js")
+    title GIPHY | Search All the GIFs & Make Your Own Animated GIF
+  body
+    div.fullContent
+      header
+        img.giphyLogo(src="giphy2.png")
+        div.navItems
+          ul.nav
+            li
+              a(href="#") Reactions
+            li
+              a(href="#") Entertainment
+            li
+              a(href="#") Sports
+            li
+              a(href="#") Stickers
+            li
+              a(href="#") Artists
+        div.pairOfButtons
+          button.buttonBar(type="button") Upload
+          button.buttonBar(type="button") Create
+          button.buttonLogin(type="button") Login
+      form
+        input(type="text")
+        button.pinkButton(type="submit")
+        
+
+      //- div.input-group.mb-3
+      //-   input(type="text").form-control(placeholder="placeholder info", aria-label="placeholderinfo", aria-describedby="basic-addon2")
+      //-   div.input-group-append
+      //-     button.btn.btn-outline-secondary(type="image", src="search-icon.svg")
+      img.banner(src="banner.gif")
+      p TRENDING GIFS
+      //- div.gifRow
+      //-   img.gif(src="gifone.gif")
+      //-   img.gif(src="gif2.gif")
+      //-   img.gif(src="gif3.gif")
+      //-   img.gif(src="gif4.gif")

@@ -1,0 +1,27 @@
+{
+  "name": "giphy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashanevs/GIPHY.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashanevs/GIPHY/issues"
+  },
+  "homepage": "https://github.com/ashanevs/GIPHY#readme",
+  "devDependencies": {
+    "pug": "^2.0.3",
+    "sass": "^1.20.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
