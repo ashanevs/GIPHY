@@ -18,15 +18,26 @@ html(lang="en")
         button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNavAltMarkup", aria-controls="navbarNavAltMarkup", aria-expanded="false", aria-label="Toggle navigation")
           span.navbar-toggler-icon
         div.collapse.navbar-collapse#navbarNavAltMarkup
-          div.navbar-nav
-            a.nav-link.nav-item(href="#") Reactions
-            a.nav-link.nav-item(href="#") Entertainment
-            a.nav-link.nav-item(href="#") Sports
-            a.nav-link.nav-item(href="#") Stickers
-            a.nav-link.nav-item(href="#") Artists
-          button(type="button").btn.btn-primary Upload
-          button(type="button").btn.btn-primary Create
-          button(type="button").btn.btn-secondary Log In
+          ul.navbar-nav
+            li.nav-item
+              a.nav-link.purpEffect(href="#") Reactions
+            li.nav-item
+              a.nav-link.purpEffect(href="#") Entertainment
+            li.nav-item
+              a.nav-link.purpEffect(href="#") Sports
+            li.nav-item
+              a.nav-link.purpEffect(href="#") Stickers
+            li.nav-item
+              a.nav-link.purpEffect(href="#") Artists
+            li.nav-item.dropdown
+              a.nav-link.purpEffect.dropdown-toggle#navbarDropdownMenuLink(href="#", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") &#x22EE;
+              div.dropdown-menu(aria-labelledby="navBarDropdownMenuLink")
+                a.dropdown-item(href="#") This is dropdown content
+                a.dropdown-item(href="#") This is also dropdown content
+                a.dropdown-item(href="#") This is more dropdown content
+          button(type="button").threeButtons.btn.btn-primary.nav-item.nav-link Upload
+          button(type="button").threeButtons.btn.btn-primary.nav-item.nav-link Create
+          button(type="button").threeButtons.btn.btn-secondary.nav-item.nav-link Log In
       form
         input(type="text")
         button.pinkButton(type="submit")
